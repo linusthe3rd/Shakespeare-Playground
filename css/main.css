@@ -1,0 +1,98 @@
+body {
+	color: #333;	
+	font-family: 'Essays 1743';
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+}
+header {
+	font-weight: bold;
+	text-align:center;
+}
+section {
+	display:block;
+	margin: 0px auto;
+	position: relative;
+	width: 980px;
+	z-index:0;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+footer {
+	display:block;
+	clear:left;
+	font-size:10pt;
+	margin-top:10px;
+	text-align:center;
+}
+.content-body {
+	overflow:hidden;
+	margin: 0px auto;
+}
+.content-body .row {
+	margin-left: 16px;
+	width: 100%;
+}
+
+/********Start Tooltip CSS***********/
+.content-body .row .playList {
+	list-style:none;
+	overflow:hidden;
+}
+.content-body .row .playList .playItem {
+	float:left;
+	margin: 15px 35px;
+	text-align:center;
+	width:150px;
+}
+.content-body .row .playList .playItem a {
+	display:block;
+	padding:5px;
+	width:150px;
+}
+.content-body .row .playList .playItem a:hover{
+	margin:-2px;
+}
+
+.content-body .row .playList .playItem a:hover{
+	border: 2px solid #666;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius:5px 5px 5px 5px;
+	border-radius:5px 5px 5px 5px;
+}
+/********End Tooltip CSS***********/
+
+/********Start Tooltip CSS***********/
+.content-body .row .playList .playDescription{
+	/* Handles the CSS animation timing*/
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	
+	background:#FFF;
+	border: 2px solid #666;
+	-webkit-border-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	margin-left: 160px;
+	opacity:0;
+	padding:30px;
+	position:absolute;
+	top:-50px;
+	visibility:hidden;
+	width:200px;
+	z-index:100;
+}
+.content-body .row .playList .playItem a:hover + .playDescription {
+	opacity:1.0;
+	visibility:visible;
+	
+	/* Give a little movement for the tooltip hover */
+	-webkit-transform: translate(10px);
+	-moz-transform: translate(10px);
+}
+/********End Tooltip CSS***********/
