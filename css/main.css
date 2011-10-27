@@ -44,8 +44,8 @@ section {
     transition: all 0.25s ease-in-out;
 
 	display:block;
-	left: 15%;
-	margin: 0px auto;
+	left: 50%;
+	margin-left: -490px;
 	position:absolute;
 	height:100%;
 	width: 980px;
@@ -79,10 +79,10 @@ footer {
 }
 
 .previous {
-	margin-left: -1500px;
+	margin-left: -9000px !important;
 }
 .next {
-	margin-left: 1500px;
+	margin-left: 9000px !important;
 }
 
 .loading-body {
@@ -163,6 +163,10 @@ a:hover{
 /********End Tooltip CSS***********/
 
 /********Start Play CSS***********/
+#play {
+  width: 80%;
+  margin-left: -40%;
+}
 #backButton {
 	display: block;
 	float: left;
