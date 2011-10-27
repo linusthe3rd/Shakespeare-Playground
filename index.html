@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link href="css/essays-1743.css" media="screen" rel="stylesheet" type="text/css" />	
+	<link href="css/main.css" media="screen" rel="stylesheet" type="text/css" />	
+	
+	<script src="js/dojo/dojo.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		var djConfig = {
+		  modulePaths : {
+		    'sp':'../sp'
+		  }
+		};
+		dojo.require("sp.base");
+
+		dojo.addOnLoad(sp.base.load);
+	</script>
+	
+</head>
+<body>
+	<header>
+		<hgroup>
+			<h1>~Shakespeare's Playground~</h1>
+		</hgroup>
+	</header>
+	<div class="slider">
+		<div class="slides" id="slidesNode">
+			<section id="pageLoading">
+				<div class="loading-body">
+					Setting the stage...
+					<br/>
+					<span class="note">* Best viewed in Chrome or Firefox.</span>
+					<br/>
+					<span class="note">** For maximum awesome, use Chrome.</span>
+				</div>
+			</section>
+			<section id="menu" class="next">
+				<div class="content-body" id="menuDiv">
+				</div>
+			</section>
+			<section id="playLoading" class="next">
+				<div class="loading-body">
+					Dressing the actors...
+				</div>
+			</section>
+			<section id="play" class="next">
+				<div class="content-body">
+					<a href="#" id="backButton">< Back</a>
+					<div id="playNode"></div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<!--footer>
+		<a href="http://kernest.com">Fonts by Kernest</a>
+	</footer-->
+</body>
+
+</html>

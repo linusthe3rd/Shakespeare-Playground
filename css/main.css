@@ -3,28 +3,71 @@ body {
 	font-family: 'Essays 1743';
 	line-height: 1.5;
 	text-rendering: optimizeLegibility;
+	
+	padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px; top: 0px;
+}
+
+.slider {
+	padding-bottom:150px;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    display: block;
+}
+.slides {
+	width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+	overflow:hidden;
+	padding-top:45px;
+    position: absolute;
+    display: block;
+}
+.note {
+	font-size: 10pt;
+}
+.removeOverflow {
+	overflow:visible;
+}
+
+section {
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+
+	display:block;
+	left: 15%;
+	margin: 0px auto;
+	position:absolute;
+	height:100%;
+	width: 980px;
+	z-index:0;
 }
 header {
 	font-weight: bold;
 	text-align:center;
-}
-section {
-	display:block;
-	margin: 0px auto;
-	position: relative;
-	width: 980px;
-	z-index:0;
 }
 a {
 	text-decoration: none;
 	color: #333;
 }
 footer {
-	display:block;
-	clear:left;
-	font-size:10pt;
-	margin-top:10px;
-	text-align:center;
+	clear: left;
+	display: block;
+	font-size: 10pt;
+	margin-top: 10px;
+	position: absolute;
+	text-align: center;
+	top: 90%;
+	width: 100%;
 }
 .content-body {
 	overflow:hidden;
@@ -35,7 +78,24 @@ footer {
 	width: 100%;
 }
 
-/********Start Tooltip CSS***********/
+.previous {
+	margin-left: -1500px;
+}
+.next {
+	margin-left: 1500px;
+}
+
+.loading-body {
+	font-size: 20pt;
+	margin-left: 45px;
+	margin-top: 15px;
+	position: relative;
+	text-align: center;
+	top: 25%;
+}
+
+
+/********Start Play Menu CSS***********/
 .content-body .row .playList {
 	list-style:none;
 	overflow:hidden;
@@ -51,25 +111,22 @@ footer {
 	padding:5px;
 	width:150px;
 }
-.content-body .row .playList .playItem a:hover{
-	margin:-2px;
-}
-
-.content-body .row .playList .playItem a:hover{
+a:hover{
 	border: 2px solid #666;
 	-webkit-border-radius: 5px;
 	-webkit-border-top-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 	-moz-border-radius:5px 5px 5px 5px;
 	border-radius:5px 5px 5px 5px;
+	margin:-2px;
 }
-/********End Tooltip CSS***********/
+/********End Play Menu CSS***********/
 
 /********Start Tooltip CSS***********/
 .content-body .row .playList .playDescription{
 	/* Handles the CSS animation timing*/
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.43s ease-in;
+	-moz-transition: all 0.4s ease-in;
 	
 	background:#FFF;
 	border: 2px solid #666;
@@ -79,10 +136,11 @@ footer {
 	-moz-border-radius:10px 10px 10px 10px;
 	border-radius:10px 10px 10px 10px;
 	margin-left: 160px;
+	margin-top:-110px;
 	opacity:0;
 	padding:30px;
 	position:absolute;
-	top:-50px;
+	top:auto;
 	visibility:hidden;
 	width:200px;
 	z-index:100;
@@ -95,4 +153,58 @@ footer {
 	-webkit-transform: translate(10px);
 	-moz-transform: translate(10px);
 }
+.content-body .row .playList .playDescription .descrTitle{
+	font-weight:bold;
+}
+.content-body .row .playList .playDescription .descrData {
+	text-align:left;
+	width:100%;
+}
 /********End Tooltip CSS***********/
+
+/********Start Play CSS***********/
+#backButton {
+	display: block;
+	float: left;
+	font-size: 14pt;
+	margin: 5px;
+	padding: 5px;
+}
+#backButton:hover {
+	margin:3px;
+}
+#playNode .actNode {
+	overflow:hidden;
+	float:left;
+	margin-bottom:30px;
+}
+#playNode .actNode .sceneNode {
+	margin-bottom:30px;
+}
+#playNode .actNode .actTitle {
+	font-size:16pt;
+}
+#playNode .actNode .sceneTitle {
+	font-size:14pt;	
+}
+#playNode .actNode .actTitle,
+#playNode .actNode .sceneTitle {
+	margin-bottom:10px;
+	text-align:center;
+}
+#playNode .actNode .speechRight div {
+	text-align: right;
+}
+#playNode .actNode .speechLeft div {
+	text-align: left;
+}
+#playNode .actNode .speechRight,
+#playNode .actNode .speechLeft,
+#playNode .actNode .speechRight div,
+#playNode .actNode .speechLeft div{
+	width:100%;
+} div,
+#playNode .actNode .speechLeft div{
+	width:100%;
+}
+/********End Play CSS***********/
