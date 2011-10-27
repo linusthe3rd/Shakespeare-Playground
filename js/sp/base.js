@@ -20,28 +20,7 @@ var PLAY_NAMES = {
 	"hen_vi_2":"hen_vi_2.xml",
 	"hen_vi_3":"hen_vi_3.xml",
 	"hen_viii":"hen_viii.xml",
-	"j_caesar":"j_caesar.xml",
-	"john":"john.xml",
-	"lear":"lear.xml",
-	"lll":"lll.xml",
-	"m_for_m":"m_for_m.xml",
-	"m_wives":"m_wives.xml",
-	"macbeth":"macbeth.xml",
-	"merchant":"merchant.xml",
-	"much_ado":"much_ado.xml",
-	"othello":"othello.xml",
-	"pericles":"pericles.xml",
-	"r_and_j":"r_and_j.xml",
-	"rich_ii":"rich_ii.xml",
-	"rich_iii":"rich_iii.xml",
-	"t_night":"t_night.xml",
-	"taming":"taming.xml",
-	"tempest":"tempest.xml",
-	"timon":"timon.xml",
-	"titus":"titus.xml",
-	"troilus":"troilus.xml",
-	"two_gent":"two_gent.xml",
-	"win_tale":"win_tale.xml"
+	"j_caesar":"j_caesar.xml"
 };
 
 sp.base.load = function(){

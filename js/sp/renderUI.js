@@ -24,7 +24,7 @@ sp.renderUI.createMenu = function(playFileName, xmlDom){
 		summaryData: summaryObj
 	});
 	
-	if (playFileName === "win_tale"){
+	if (playFileName === "j_caesar"){
 		setTimeout(function(){
 			dojo.addClass("pageLoading", "previous");
 			dojo.removeClass("menu", "next");	
