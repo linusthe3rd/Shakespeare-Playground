@@ -1,0 +1,37 @@
+/* KERNEST.COM WEB FONT CSS GENERATED FOR essays-1743 */
+
+/* 
+Essays 1743 
+http://www.thibault.org/fonts/essays/ 
+Foundry: John Stracke, http://www.thibault.org/fonts 
+Contributors: John Stracke 
+License: GNU Lesser General Public License, http://www.gnu.org/licenses/lgpl-2.1.html 
+*/
+
+@font-face {
+	font-family: 'Essays 1743';
+	src: url('fonts/essays-1743.eot');
+	src: local('://'), url('fonts/essays-1743.svg#essays1743') format('svg'), url('fonts/essays-1743.woff') format('woff'),  url('fonts/essays-1743.ttf') format('truetype');
+ }
+@font-face {
+	font-family: 'Essays 1743';
+	src: local('://'), url('fonts/Essays1743-Bold.ttf') format('truetype');
+	font-weight:bold;
+ }
+@font-face {
+	font-family: 'Essays 1743';
+	src: local('://'), url('fonts/Essays1743-Italic.ttf') format('truetype');
+	font-style:italic;
+ }
+@font-face {
+	font-family: 'Essays 1743';
+	src: local('://'), url('fonts/Essays1743-BoldItalic.ttf') format('truetype');
+	font-weight:bold;
+	font-style:italic;
+ }
+.essays-1743 {
+	font-family: 'Essays 1743';
+	line-height: 140%;
+	text-rendering: optimizeLegibility;
+}
+
